@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/HomePage.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HomePage = () => {
   return (
-    <div className="home-container">
-      <div className="text-box">
+    <div className="home-container home-page">
+      <div className="home-text-box">
         <h1>CoCon 2024 - Chamonix Mont-Blanc, France</h1>
         <p></p>
         <p>We proudly present this year's CoCon which is being jointly organised by IAESTE France and IAESTE Switzerland from the 25th - 28th April 2024.

@@ -6,28 +6,27 @@
     position: relative;
   }
   
-.text-box {
+/* Prefixing class names for HomePage to prevent style bleed */
+.home-page .home-text-box {
     position: absolute;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
-    min-height:350px;
+    min-height: 350px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(210, 180, 140, 0.8); /* Light shade of brown with semi-transparency */
+    background-color: rgba(210, 180, 140, 0.8); /* Adjusted */
     padding: 20px;
     border-radius: 8px;
-    color: #000; 
+    color: #000;
     text-align: center;
     font-size: large;
     font-family: 'Roboto', sans-serif;
 }
 
-.text-box h1 {
-     font-family: 'DM Serif Display', sans-serif; 
-    text-align: center;
+.home-page .home-text-box h1 {
+    font-family: 'DM Serif Display', sans-serif;
 }
-  

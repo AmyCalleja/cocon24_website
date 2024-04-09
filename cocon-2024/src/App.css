@@ -4,12 +4,12 @@
 }
 
 .nav-tabs .nav-link {
-  padding: 2.5rem 2.5rem; /* Increase padding to make tabs larger */
+  padding: 4.5rem 4.5rem; /* Increase padding to make tabs larger */
 }
 
 .navbar .logo {
   height: auto; /* Set the height for the logos */
-  max-height: 150px; /* Maintain the aspect ratio */
+  max-height: 180px; /* Maintain the aspect ratio */
   width: auto; /* Ensure logos do not exceed this width */
 }
 
