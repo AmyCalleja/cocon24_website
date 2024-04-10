@@ -2,10 +2,12 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import ConnectLogo from './images/core_logo.png';
-import CoConLogo from './images/cocon_logo.png';
+import ConnectLogo from './images/logos/core_logo.png';
+import CoConLogo from './images/logos/blue_cocon_logo.png';
 import HomePage from './components/HomePage';
 import LocationPage from './components/Location';
+import WorkshopsPage from './components/Workshops';
+import SchedulePage from './components/Schedule';
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
                   <li className="nav-item">
                     <Link className="nav-link" to="/location">Location</Link>
                   </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/workshops">Workshops</Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/schedule">Schedule</Link>
+                  </li>
                   {/* Add other nav items here */}
                 </ul>
               </div>
@@ -38,6 +46,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/location" element={<LocationPage />} />
+          <Route path="/workshops" element={<WorkshopsPage />} />
+          <Route path="/schedule" element={<SchedulePage />} />
           {/* Define other routes as needed */}
         </Routes>
 

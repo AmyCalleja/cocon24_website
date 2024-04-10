@@ -1,6 +1,6 @@
 .location-container {
     height: 100vh;
-    background-image: url('../images/location_bg.jpg'); /* Adjust path as needed */
+    background-image: url('../images/home_bg.jpg'); /* Adjust path as needed */
     background-size: cover;
     background-position: center;
 }
@@ -8,9 +8,9 @@
 .map-box iframe {
     width: 50%; /* Adjusted to fill its container */
     height: 20%; /* Adjusted to fill its container */
-    border: 0;
-    border-radius: 8;
-    padding-left: 6cqi;
+    
+    border-radius: 6px;
+    padding-left: 60px;
     padding-right: 60px;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -19,39 +19,47 @@
 /* Ensure styles are specific to location page to avoid affecting HomePage */
 .location-page .location-text-box {
 
-    background-color: rgba(210, 180, 140, 0.8); /* Semi-transparent white */
+    /*background-color: rgba(193, 217, 106, 0.8); /* Semi-transparent white */
+    background-color: rgba(255, 255, 242, 0.65); /* Semi-transparent white */
     border-radius: 8px;
-    min-height:60%;
-    max-width: 80%;
-    margin: 0 auto; ;
+    /*min-height:90%;
+    max-width: 90%;*/
+    margin: 0 auto;
 
-    color: #000;
+    color: #19415A;
     text-align: left;
-    font-size: large;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Futura', sans-serif;
+    font-size: medium;
 
-    padding-left:40px;
-    padding-right: 40px;
-
+    padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically centers the content */
-    height: 50%; /* Takes full height of its container */
+    height: 80%; /* Takes full height of its container */
     text-align: center; /* Ensures text is centered within the box */
 }
     
 
 .location-page .location-text-box h1 {
-    font-family: 'DM Serif Display', sans-serif;
+    font-family: 'Brightwall', sans-serif;
     text-align: center;
+    color: #A1CB0C;
+    justify-content:flex-start;
+    font-size: large;
+   
 }
+
 
 .location-text-box h4 {
     margin-top: 1.2rem; /* Adds a bit of margin on the top for spacing between paragraphs */
     margin-bottom: 1.2rem; /* Adjusts bottom margin for spacing */
-    font-family: 'DM Serif Display', sans-serif;
+    font-family: 'Brightwall', sans-serif;
     text-align: left; /* Aligns text to the left */
+    color: #D92414;
+    justify-content: center;
+    font-size: large;
 }
+
 
 .location-text-box p {
     margin-top: 0.05rem; /* Adds a bit of margin on the top for spacing between paragraphs */

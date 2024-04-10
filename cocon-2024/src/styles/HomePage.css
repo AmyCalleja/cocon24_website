@@ -1,12 +1,21 @@
 .home-container {
     height: 100vh;
-    background-image: url('../images/home_bg.jpg'); 
+    background-image: url('../images/location_bg.jpg'); 
     background-size: cover;
     background-position: center;
     position: relative;
-  }
-  
-/* Prefixing class names for HomePage to prevent style bleed */
+}
+
+.home-overlay-image {
+    position: absolute;
+    top: 12%; /* Adjust based on where you want the image */
+    left: 50%; /* Center the image horizontally */
+    transform: translate(-50%, -20%); /* Adjust the positioning */
+    z-index: 1; /* Ensure it's above the background but below the text box */
+    max-width: 30%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .home-page .home-text-box {
     position: absolute;
     display: flex;
@@ -14,19 +23,43 @@
     justify-content: center;
     align-items: center;
     height: auto;
-    min-height: 350px;
-    top: 50%;
+    min-height: 190px;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(210, 180, 140, 0.8); /* Adjusted */
+    background-color: rgba(25,65,90, 0.7);
+    /*background-color: rgba(255, 255, 255,0.7);*/
     padding: 20px;
     border-radius: 8px;
-    color: #000;
+    color: #ffffff;
     text-align: center;
     font-size: large;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Futura', sans-serif;
+    z-index: 2; /* Ensure the text box is above the overlay image */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 .home-page .home-text-box h1 {
-    font-family: 'DM Serif Display', sans-serif;
+    font-family: 'Brightwall', sans-serif;
+    color: #c1d96a;
+    font-size: 2vw;
 }
+
+@media (max-width: 768px) {
+    .home-overlay-image {
+      top: 5%; /* Adjust as needed */
+      left: 50%;
+      transform: translate(-50%, -10%);
+      max-width: 80%; /* Increase width for smaller screens */
+    }
+  
+    .home-page .home-text-box {
+      top: 50%; /* Adjust based on the overlay image's position */
+      transform: translate(-50%, -50%);
+      width: 90%; /* Increase width for better text fitting */
+      min-height: 20%; /* Ensure it's tall enough to fit text */
+      font-size: smaller; /* Adjust text size for small screens */
+    }
+  }

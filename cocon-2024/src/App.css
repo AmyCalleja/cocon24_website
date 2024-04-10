@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Futura';
+  src: url('./fonts/FuturaStdMedium.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brightwall';
+  src: url('./fonts/Brightwall.ttf') format('truetype');
+  font-style: normal;
+}
+
 /* Navigation Bar */
 .navbar {
   background-color: #caf0f8 /* Adjust the background color as needed */
@@ -7,6 +19,26 @@
   padding: 4.5rem 4.5rem; /* Increase padding to make tabs larger */
 }
 
+@media (max-width: 768px) {
+  .nav-tabs .nav-link {
+    padding: 1rem; /* Less padding on smaller screens */
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      max-height: 35%; /* Reduce logo size on small screens */
+      width: auto;
+    }
+  
+    /* You might also want to adjust the navbar's padding */
+    .navbar {
+      padding: 0.5rem 1rem; /* Reduced padding */
+    }
+  }
+  
+}
+
+
 .navbar .logo {
   height: auto; /* Set the height for the logos */
   max-height: 180px; /* Maintain the aspect ratio */
@@ -15,6 +47,6 @@
 
 /* Ensures logos fit well and do not disrupt layout */
 .logo {
-  max-height: 75px;
-  max-width: 75px;
+  max-height: 5vh; /* Example with viewport height */
+  max-width: 15%; /* Ensures it's responsive */
 }

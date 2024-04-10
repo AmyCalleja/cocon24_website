@@ -1,0 +1,51 @@
+.workshops-container {
+  height: 100vh;
+  background-image: url('../images/homebg2.jpg'); /* Adjust the background image path */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.workshops-page .workshops-text-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  height: auto;
+  min-height: 190px;
+  width: auto;
+  top: 30%; /* Center vertically in the view */
+  left: 50%; /* Center horizontally in the view */
+  transform: translate(-50%, -50%);
+
+  background-color: rgba(193, 217, 106, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  color: #ffffff; /* Adjust the font color as needed */
+  text-align: center;
+  font-size: large;
+  font-family: 'Futura', sans-serif; /* Adjust the font family as needed */
+  z-index: 2;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  background-color: transparent; /* Ensure text box is transparent */
+}
+
+.workshops-page .workshops-text-box h1 {
+  font-family: 'Brightwall', sans-serif; /* Adjust the font family as needed */
+  /*color: #c1d96a; /* Adjust the color to fit the theme */
+  color: #D92414;
+  font-size: 4vw; /* Adjust the size as needed */
+}
+
+@media (max-width: 768px) {
+  .workshops-page .workshops-text-box {
+    top: 50%; /* Center based on view */
+    transform: translate(-50%, -50%);
+    width: 90%; /* Adjust width for text fitting */
+    min-height: 20%; /* Ensure it's tall enough for text */
+    font-size: smaller; /* Adjust text size for smaller screens */
+  }
+}
