@@ -1,0 +1,45 @@
+.schedule-container {
+    height: 100vh;
+    background-image: url('../images/schedule_bg.jpg'); /* Change the image path as needed */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Padding to push content down */
+}
+
+.schedule-title {
+    color: #19415a;
+    font-family: 'Brightwall', sans-serif;
+    font-size: 3vw; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space between title and PDF */
+}
+
+.schedule-pdf-viewer {
+    width: 80%; /* Responsive width */
+    height: 80%; /* Appropriate height to fit content */
+    margin-bottom: 10px; /* Space between PDF and notice */
+}
+
+.schedule-change-notice {
+    color: #ffffff;
+    font-family: 'Futura', sans-serif;
+    font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+    .schedule-title {
+      font-size: 6vw; /* Larger font size on smaller screens */
+    }
+
+    .schedule-pdf-viewer {
+      width: 90%; /* Wider on smaller screens for readability */
+      height: 50%; /* Adjust height based on available space */
+    }
+
+    .schedule-change-notice {
+      font-size: 3vw; /* Readable font size on small screens */
+    }
+}
