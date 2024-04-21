@@ -10,43 +10,27 @@
   font-style: normal;
 }
 
-/* Navigation Bar */
 .navbar {
-  background-color: #caf0f8 /* Adjust the background color as needed */
+  background-color: #caf0f8; /* Light blue */
 }
 
-.nav-tabs .nav-link {
-  padding: 4.5rem 4.5rem; /* Increase padding to make tabs larger */
+/* Apply Futura font to all navigation links */
+.navbar-nav .nav-link {
+  font-family: 'Futura', sans-serif;
+  font-size: 1.2rem; /* Adjust size as needed */
+}
+
+.navbar .logo {
+  max-height: 5vh; /* Adjust based on your preference */
+  width: auto; /* Auto width for aspect ratio maintenance */
 }
 
 @media (max-width: 768px) {
-  .nav-tabs .nav-link {
-    padding: 1rem; /* Less padding on smaller screens */
+  .navbar .logo {
+    max-height: 35px; /* Smaller logo on mobile */
   }
 
-  @media (max-width: 768px) {
-    .logo {
-      max-height: 35%; /* Reduce logo size on small screens */
-      width: auto;
-    }
-  
-    /* You might also want to adjust the navbar's padding */
-    .navbar {
-      padding: 0.5rem 1rem; /* Reduced padding */
-    }
+  .navbar-nav .nav-link {
+    padding: 8px 12px; /* Smaller padding on mobile */
   }
-  
-}
-
-
-.navbar .logo {
-  height: auto; /* Set the height for the logos */
-  max-height: 180px; /* Maintain the aspect ratio */
-  width: auto; /* Ensure logos do not exceed this width */
-}
-
-/* Ensures logos fit well and do not disrupt layout */
-.logo {
-  max-height: 5vh; /* Example with viewport height */
-  max-width: 15%; /* Ensures it's responsive */
 }
