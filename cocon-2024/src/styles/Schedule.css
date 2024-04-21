@@ -1,6 +1,6 @@
 .schedule-container {
     height: 100vh;
-    background-image: url('../images/schedule_bg.jpg'); /* Change the image path as needed */
+    background-image: url('../images/backgrounds/schedule_bg.jpg'); /* Change the image path as needed */
     background-size: cover;
     background-position: center;
     position: relative;

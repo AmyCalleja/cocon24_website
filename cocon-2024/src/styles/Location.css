@@ -1,6 +1,6 @@
 .location-container {
     height: 100vh;
-    background-image: url('../images/home_bg.jpg'); /* Adjust path as needed */
+    background-image: url('../images/backgrounds/home_bg.jpg'); /* Adjust path as needed */
     background-size: cover;
     background-position: center;
 }

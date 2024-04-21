@@ -1,0 +1,59 @@
+/* Ensures the session container is full screen and properly aligned */
+.session-content {
+    height: 100vh;
+    background-image: url('../images/backgrounds/test.jpg'); /* Adjust as necessary */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Slightly reduced padding */
+    padding-bottom: 20px;
+    justify-content: space-around; /* Adjust content spacing to distribute evenly */
+}
+
+/* Styling for the session title */
+.session-title {
+    color: #19415a; /* Dark blue color */
+    font-family: 'Brightwall', sans-serif;
+    font-size: 4vh; /* Responsive font size for the title */
+    margin-bottom: 20px; /* Adequate spacing below the title */
+}
+
+/* Carousel customization */
+.session-carousel .carousel {
+    max-width: 100%; /* Adjust width as needed */
+    margin: auto; /* Center the carousel horizontally */
+}
+
+.session-carousel .carousel-item img {
+    text-align: center;
+    color: #000000;
+    font-family: 'Futura', sans-serif;
+    object-fit: contain; /* Ensures images do not exceed the bounds */
+    max-width:85vh; /* Ensures width is controlled */
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Making navigation arrows more visible */
+.session-carousel .carousel-control-prev-icon,
+.session-carousel .carousel-control-next-icon {
+    filter: invert(100%); /* Makes the white arrows black */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .session-title {
+        font-size: 6vw; /* Adjusted for readability on smaller screens */
+    }
+
+    .session-carousel .carousel {
+        width: 70vh; /* Allows fuller use of space on smaller screens */
+    }
+
+    .session-content {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

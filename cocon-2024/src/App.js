@@ -1,13 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Dropdown } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ConnectLogo from './images/logos/core_logo.png';
 import CoConLogo from './images/logos/blue_cocon_logo.png';
 import HomePage from './components/HomePage';
 import LocationPage from './components/Location';
-import WorkshopsPage from './components/Workshops';
 import SchedulePage from './components/Schedule';
+import Session1 from './components/Workshops/Session1';
+import Session2 from './components/Workshops/Session2';
+import Session3 from './components/Workshops/Session3';
+import Session4 from './components/Workshops/Session4';
 
 function App() {
   return (
@@ -30,7 +34,17 @@ function App() {
                     <Link className="nav-link" to="/location">Location</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/workshops">Workshops</Link>
+                    <Dropdown>
+                      <Dropdown.Toggle variant="light" id="dropdown-workshops">
+                        Workshops
+                      </Dropdown.Toggle>
+                      <Dropdown.Menu>
+                        <Dropdown.Item as={Link} to="/workshops/session1">Session 1</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/workshops/session2">Session 2</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/workshops/session3">Session 3</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/workshops/session4">Session 4</Dropdown.Item>
+                      </Dropdown.Menu>
+                    </Dropdown>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to="/schedule">Schedule</Link>
@@ -46,7 +60,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/location" element={<LocationPage />} />
-          <Route path="/workshops" element={<WorkshopsPage />} />
+          <Route path="/workshops/session1" element={<Session1 />} />
+          <Route path="/workshops/session2" element={<Session2 />} />
+          <Route path="/workshops/session3" element={<Session3 />} />
+          <Route path="/workshops/session4" element={<Session4 />} />
           <Route path="/schedule" element={<SchedulePage />} />
           {/* Define other routes as needed */}
         </Routes>
